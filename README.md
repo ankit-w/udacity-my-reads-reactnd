@@ -1,4 +1,4 @@
-This is the my submission final assessment project for Udacity's React Fundamentals course.
+This is the my submission for the final assessment project for Udacity's React Fundamentals course.
 
 ## How to run
 ```
