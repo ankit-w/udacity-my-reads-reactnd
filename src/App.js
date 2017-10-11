@@ -5,7 +5,6 @@ import MainPage from './MainPage'
 import BookSearch from './BookSearch'
 
 class BooksApp extends React.Component {
-
   render() {
     return (
       <div className="app">

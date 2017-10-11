@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Book from './Book.js'
 class BookShelf extends Component {
@@ -9,17 +9,17 @@ class BookShelf extends Component {
         shelfType: PropTypes.string.isRequired
     }
     render() {
-        let currentShelfList = this.props.allBooks
-            ? this
-                .props
-                .allBooks
-                .filter((book) => (book.shelf)
-                    ? book.shelf === this.props.shelfType
-                    : 'none' === this.props.shelfType)
-            : [];
+        let currentShelfList = this.props.allBooks ?
+            this
+            .props
+            .allBooks
+            .filter((book) => (book.shelf) ?
+                book.shelf === this.props.shelfType :
+                'none' === this.props.shelfType) :
+            [];
         if (!currentShelfList[0]) {
             return <div/>
-        } else 
+        } else
             return <div className="bookshelf">
                 <h2 className="bookshelf-title">{this.props.title}</h2>
                 <div className="bookshelf-books">

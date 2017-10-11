@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Book extends Component {
@@ -11,13 +11,13 @@ class Book extends Component {
     }
 
     onUpdateShelf = (book, newShelf) => {
-        this.setState({shelf: newShelf});
+        this.setState({ shelf: newShelf });
         this.props.updateShelf(book, newShelf)
     };
 
     render() {
-        const placeholder = "http://via.placeholder.com/128x193?text="+this.props.book.title;
-        
+        const placeholder = "http://via.placeholder.com/128x193?text=" + this.props.book.title;
+
         return <div className="book">
             <div className="book-top">
                 <div
